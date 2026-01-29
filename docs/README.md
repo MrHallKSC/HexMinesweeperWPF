@@ -1,5 +1,7 @@
 # HexMinesweeper WPF - AQA 7517 NEA Exemplar Project
 
+![HexMinesweeper Screenshot](HexMinesweeper.png)
+
 ## Table of Contents
 1. [Concept](#concept)
 2. [Game Rules](#game-rules)
