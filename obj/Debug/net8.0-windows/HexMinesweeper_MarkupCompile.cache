@@ -1,5 +1,5 @@
 ﻿HexMinesweeper
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\omh\OneDrive - The Kings School Chester\Coding\CSharp\_EXEMPLAR PROJECTS\HexMinesweeperWPF\App.xaml
 32129058202
 
-14-828595743
+16-401477962
 198868611154
 UI\HighScoreWindow.xaml;UI\InputHighScoreName.xaml;UI\MainWindow.xaml;
 
-False
+True
 

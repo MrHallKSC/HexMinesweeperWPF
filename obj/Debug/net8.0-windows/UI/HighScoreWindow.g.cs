@@ -83,7 +83,7 @@ namespace HexMinesweeper {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/HexMinesweeper;component/ui/highscorewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/HexMinesweeper;V1.0.0.0;component/ui/highscorewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UI\HighScoreWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
