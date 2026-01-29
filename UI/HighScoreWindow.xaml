@@ -1,0 +1,41 @@
+﻿<Window x:Class="HexMinesweeper.HighScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="High Scores"
+        Height="450"
+        Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="108"/>
+            <RowDefinition Height="108"/>
+            <RowDefinition Height="108"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Easy"
+                Grid.Row="0">
+            <DataGrid x:Name="dgEasy"
+                    AutoGenerateColumns="True"/>
+        </GroupBox>
+
+        <GroupBox Header="Medium"
+                Grid.Row="1">
+            <DataGrid x:Name="dgMedium"
+                    AutoGenerateColumns="True"/>
+        </GroupBox>
+
+        <GroupBox Header="Hard"
+                Grid.Row="2">
+            <DataGrid x:Name="dgHard"
+                    AutoGenerateColumns="True"/>
+        </GroupBox>
+        <Button x:Name="btnClose"
+                Grid.Row="3"
+                HorizontalAlignment="Right"
+                Content="Close"
+                Width="75"
+                Height="20"
+                Margin="5"
+                Click="btnClose_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "nR8QDWBH4DE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\omh\\OneDrive - The Kings School Chester\\Coding\\CSharp\\_EXEMPLAR PROJECTS\\HexMinesweeperWPF\\HexMinesweeper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\omh\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\omh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\omh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\omh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

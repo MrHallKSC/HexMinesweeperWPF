@@ -1,0 +1,56 @@
+﻿<Window x:Class="HexMinesweeper.InputHighScoreName"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HexMinesweeper"
+        mc:Ignorable="d"
+        Title="High Score"
+        Height="230"
+        Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtGreeting"
+                Grid.Row="0"
+                Text="YOU GOT A HIGH SCORE!"
+                FontSize="16"
+                Margin="5"/>
+        <TextBlock x:Name="txtElapsed"
+                Grid.Row="1"
+                Text="Difficulty: Time: "
+                FontSize="16"
+                Margin="5"/>
+        <StackPanel Grid.Row="2"
+                Orientation="Horizontal"
+                HorizontalAlignment="Left"
+                Margin="5">
+            <TextBlock Text="Name"
+                    FontSize="16"/>
+            <TextBox x:Name="txtName"
+                    Margin="5"
+                    FontSize="16"
+                    Text=""
+                    Width="150"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3"
+                Orientation="Horizontal"
+                HorizontalAlignment="Right"
+                Margin="5">
+            <Button x:Name="btnOk"
+                    Content="OK"
+                    Width="75"
+                    Margin="5"
+                    Click="btnOk_Click"/>
+            <Button x:Name="btnCancel"
+                    Content="Cancel"
+                    Width="75"
+                    Margin="5"
+                    Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

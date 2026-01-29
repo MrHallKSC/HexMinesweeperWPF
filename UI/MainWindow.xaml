@@ -1,0 +1,111 @@
+﻿<Window x:Class="HexMinesweeper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HexMinesweeper"
+        mc:Ignorable="d"
+        Title="HexMinesweeper"
+        Height="450"
+        Width="800">
+
+    <Grid x:Name="MainGrid">
+        <!-- Define the main grid with two columns and two rows -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Define the menubar-->
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit"
+                        Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="View">
+                <MenuItem x:Name="ToggleTimerMenuItem"
+                        Header="Hide Timer"
+                        Click="ToggleTimer_Click"/>
+                <MenuItem x:Name="ViewHighScoresMenuItem"
+                        Header="Show HighScores"
+                        Click="ShowHighScores_Click"/>
+            </MenuItem>
+            <MenuItem Header="Difficulty">
+                <MenuItem Header="Easy"
+                        Click="EasyButton_Click"/>
+                <MenuItem Header="Medium"
+                        Click="MediumButton_Click"/>
+                <MenuItem Header="Hard"
+                        Click="HardButton_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Hexagon Grid Panel -->
+        <Canvas Name="canvas"
+                Grid.Column="0"
+                Grid.Row="1"
+                Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+
+        <!-- Controls Panel -->
+        <StackPanel Grid.Column="1"
+                Grid.Row="1"
+                VerticalAlignment="Top"
+                Margin="10">
+            <Label FontSize="16"
+                    FontWeight="Bold"
+                    Margin="0,10"
+                    Content="Difficulties"/>
+            <Button x:Name="EasyButton"
+                    Content="Easy"
+                    Height="30"
+                    Margin="0,0,0,10"
+                    Click="EasyButton_Click"/>
+            <Button x:Name="MediumButton"
+                    Content="Medium"
+                    Height="30"
+                    Margin="0,0,0,10"
+                    Click="MediumButton_Click"/>
+            <Button x:Name="HardButton"
+                    Content="Hard"
+                    Height="30"
+                    Margin="0,0,0,30"
+                    Click="HardButton_Click"/>
+            <Button Content="Restart"
+                    Height="30"
+                    Margin="0,0,0,10"
+                    Click="ResetButton_Click"/>
+            <Label x:Name="lblBombsRemaining"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Margin="0,10"/>
+            <Button x:Name="PauseButton"
+                    Content="Pause"
+                    Height="30"
+                    Margin="0,0,0,10"
+                    Click="PauseButton_Click"/>
+            <Label x:Name="lblTimer"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Margin="0,10"
+                    Content="Time: 0"/>
+        </StackPanel>
+
+        <!-- Overlay for pause / win / lose -->
+        <Grid x:Name="Overlay"
+                Background="#AA000000"
+                Visibility="Collapsed"
+                Grid.Column="0"
+                Grid.Row="1">
+            <TextBlock x:Name="OverlayText"
+                    Text="Paused"
+                    Foreground="White"
+                    FontSize="48"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
