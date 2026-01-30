@@ -1,4 +1,4 @@
-# HexMinesweeper WPF - AQA 7517 NEA Exemplar Project
+# HexMinesweeper WPF - Exemplar Project
 
 ![HexMinesweeper Screenshot](HexMinesweeper.png)
 
