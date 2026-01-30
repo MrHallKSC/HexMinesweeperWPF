@@ -98,10 +98,10 @@ This project serves as an exemplar for AQA A-Level Computer Science (7517) NEA p
 
 ## AQA 7517 Technical Skills Demonstrated
 
-This project demonstrates technical skills from the **AQA 7517 A-Level Computer Science NEA Assessment Criteria**, contributing to the **Technical Solution (42 marks)** section:
-- **Completeness**: 15 marks
-- **Technical Skills**: 27 marks (primarily **Group A - Complex**)
-- **Coding Styles**: Integrated throughout ("Excellent" standard required)
+This project demonstrates technical skills from the **AQA 7517 A-Level Computer Science NEA Assessment Criteria**, contributing to the **Technical Solution (42 marks)** section which comprises:
+- **Completeness**: out of 15 marks
+- **Technical Skills**: out of 27 marks 
+- **Coding Styles**: included within technical skills. 
 
 ### Data Model & Structure (Group A - Complex)
 
